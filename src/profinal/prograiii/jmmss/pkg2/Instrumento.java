@@ -37,7 +37,6 @@ public class Instrumento {
         agregar("A001", "Amplificador",        "Marshall",  "MG15",          189.99,  7);
     }
 
-    // --- Metodo AGREGAR ---
     /**
      * Agrega un instrumento al inventario.
      */
@@ -50,7 +49,6 @@ public class Instrumento {
         stocks.add(stock);
     }
 
-    // --- Metodo BUSCAR ---
     /**
      * Busca si existe un instrumento con el codigo dado.
      */
@@ -63,7 +61,6 @@ public class Instrumento {
         return false;
     }
 
-    // --- Metodo GET INDICE ---
     /**
      * Retorna el indice del instrumento con el codigo dado.
      * Retorna -1 si no existe.
@@ -77,7 +74,6 @@ public class Instrumento {
         return -1;
     }
 
-    // --- Metodo ELIMINAR ---
     /**
      * Elimina el instrumento en la posicion dada.
      */
@@ -90,7 +86,6 @@ public class Instrumento {
         stocks.remove(indice);
     }
 
-    // --- Metodo EDITAR ---
     /**
      * Actualiza los campos de un instrumento en la posicion dada.
      */
@@ -110,7 +105,6 @@ public class Instrumento {
     public double getPrecio(int i)  { return (double) precios.get(i); }
     public int    getStock(int i)   { return (int) stocks.get(i); }
 
-    // --- Utilidades de listado ---
     /** Retorna la cantidad total de instrumentos en el inventario. */
     public int getCantidad() {
         return codigos.size();
